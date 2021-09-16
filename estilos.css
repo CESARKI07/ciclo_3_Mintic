@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+div {
+    width: 100%;
+    /*ancho*/
+    height: 50px;
+    /*alto*/
+    box-shadow: 1px 1px 5px #000;
+    /*sombra*/
+    position: fixed;
+    /*static scroll*/
+    background-color: gray;
+}
+
+#nav_bar {
+    width: 450px;
+    /*ancho*/
+    padding-top: 16px;
+    /*relleno de arriba*/
+    margin: auto;
+    /*centrar*/
+}
+
+#nav_bar ul a {
+    color: white;
+    /*color letra*/
+    background-color: grey;
+    text-decoration: none;
+    /*quitar decoracion*/
+    font: 16px verdana;
+    padding: auto;
+    /*distancia*/
+}
+
+#nav_bar ul a:hover {
+    background-color: blue;
+    /*cambian de color al ser seleccionados*/
+}
+
+#Registerbutton {
+    border-radius: 5px;
+    height: 30px;
+    width: auto;
+    position: absolute;
+    top: 15px;
+    right: 150px;
+    padding: 5px 5px;
+}
+
+#Registerbutton :hover {
+    background-color: blue;
+    /*cambian de color al ser seleccionados*/
+    color: white;
+}
+
+#registro {
+    color: black;
+    text-decoration: none;
+}
+
+#form_registro {
+    width: 100px;
+    height: 200px;
+    border: 1px solid black;
+}
