@@ -1,33 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <title>Segunda pag</title>
     <link rel="stylesheet" href="./estilos.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <div id="form_registro">
+    <div id="formRegistro">
         <form action="">
-            <label for="campoNombre">Nombre completo</label>
-            <input id="campoNombre" type="text" name="Nombre"  placeholder="Ingrese nombre completo" required>
-
-            <label for="campoUsuario">Usuario</label>
-            <input id="campoUsuario" type="text" name="Usuario" placeholder="Ingrese un usuario" required>
-
-            <label for="campoContraseña">Contraseña</label>
-            <input id="campoContraseña" type="Password" name="Contraseña" placeholder="Ingrese una contraseña" required>
-
-            <label for="campoTelefonoMoviul">Teléfono móvil</label>
-            <input id="campoTelefonoMovil" type="number" name="Teléfono_móvil" placeholder="Ingrese un teléfono móvil" required>
-
-            <label for="campoDireccionResidencia
-            "></label>
+            <ul>
+                <li><label for="campoNombre">Nombre completo</label>
+                    <input id="campoNombre" type="text" name="Nombre" required></li>
+                <li><label for="campoUsuario">Usuario</label>
+                    <input id="campoUsuario" type="text" name="Usuario" required></li>
+                <li><label for="campoContraseña">Contraseña</label>
+                    <input id="campoContraseña" type="password" name="Contraseña" required></li>
+                <li><label for="campoTelefonoMovil">Teléfono móvil</label>
+                    <input id="campoTelefonoMovil" type="text" name="Teléfono_móvil" required></li>
+                <li> <label for="direccionResidencia">Dirección de residencia</label>
+                    <input id="direccionResidencia" type="text" name="Dirección_Residencia" required></li>
+                <li><label for="correoElectronico">Correo Electrónico</label>
+                    <input id="correoElectronico" type="email" name="Correo_electrónico" placeholder="Ejm: correo@xxxxxx.com" required></li>
+                <li><label for="confirmarCorreo">Confirmar Correo</label>
+                    <input id="confirmarCorreo" type="email" name="Confirmar_Correo" placeholder="Ejm: correo@xxxxxx.com" required></li>
+            </ul>
         </form>
+        <!-- <div class="title" style="display: flex; justify-content: center;">
+            <h1>CONFIGURACIONES</h1>
+        </div> -->
 
+        <div class="buttons">
+            <button class="config-button">SONIDO</button>
+            <button class="config-button">CAMBIAR IDIOMA</button>
+            <button id="light" class="config-button" onclick="light()">MODO NOCTURNO</button>
+        </div>
 
+        <!-- <script>
+            var valor = true;
+
+            function light() {
+                var uno = document.getElementById('light');
+                valor ? uno.innerText = "MODO NOCTURNO" : uno.innerText = "MODO DIURNO";
+                valor = !valor
+            }
+        </script> -->
     </div>
 
 </body>
+
 </html>

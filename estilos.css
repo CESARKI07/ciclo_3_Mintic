@@ -1,68 +1,126 @@
-* {
-    padding: 0;
-    margin: 0;
-}
-
-div {
-    width: 100%;
-    /*ancho*/
-    height: 50px;
-    /*alto*/
-    box-shadow: 1px 1px 5px #000;
-    /*sombra*/
-    position: fixed;
-    /*static scroll*/
-    background-color: gray;
-}
-
-#nav_bar {
-    width: 450px;
-    /*ancho*/
-    padding-top: 16px;
-    /*relleno de arriba*/
-    margin: auto;
-    /*centrar*/
-}
-
-#nav_bar ul a {
-    color: white;
-    /*color letra*/
-    background-color: grey;
-    text-decoration: none;
-    /*quitar decoracion*/
-    font: 16px verdana;
-    padding: auto;
-    /*distancia*/
-}
-
-#nav_bar ul a:hover {
-    background-color: blue;
-    /*cambian de color al ser seleccionados*/
-}
-
-#Registerbutton {
-    border-radius: 5px;
-    height: 30px;
-    width: auto;
-    position: absolute;
-    top: 15px;
+           * {
+               padding: 0;
+               margin: 0;
+           }
+           
+           #nav_bar {
+               width: 100%;
+               /*ancho*/
+               height: 50px;
+               /*alto*/
+               box-shadow: 1px 1px 5px #000;
+               /*sombra*/
+               position: fixed;
+               /*static scroll*/
+               background-color: rgb(202, 192, 195);
+               /*Definir un ancho fijo evita que las opciones del menu cambien de posición cuando 
+    se ajuste el tamaño de la ventana del navegador*/
+               padding-left: 250px;
+               padding-top: 16px;
+           }
+           
+           #nav_bar ul li {
+               margin-right: 60px;
+               /*separación entre  las opciones de menu o lista desordenada*/
+               color: rgb(15, 14, 14);
+               /*color letra*/
+               background-color: rgb(32, 231, 245);
+               text-decoration: none;
+               /*quitar decoracion*/
+               font: 16px verdana;
+               padding: auto;
+               /*distancia*/
+               display: inline-block
+           }
+           
+           #nav_bar a:hover {
+               background-color: blue;
+               /*cambian de color al ser seleccionados*/
+           }
+           
+           #Registerbutton:focus {
+               background: blue;
+               color: white;
+           }
+           
+           #Registerbutton {
+               /*border-radius: 5px;*/
+               /*El boton debe ser cuadrado, el atributo border radius no aplica para este requerimiento*/
+               margin-left: 1100px;
+               margin-top: 10px;
+               width: 50px;
+               height: 30px;
+               position: fixed;
+               /*top: 15px;
     right: 150px;
-    padding: 5px 5px;
-}
-
-#Registerbutton :hover {
-    background-color: blue;
-    /*cambian de color al ser seleccionados*/
-    color: white;
-}
-
-#registro {
-    color: black;
-    text-decoration: none;
-}
-
-#form_registro {
-    width: 100px;
-    height: 200px;
-    border: 1px solid black;
-}
+    */
+               padding: 1px 1px;
+               font-size: 12px;
+           }
+           
+           #registro {
+               color: black;
+               text-decoration: none;
+           }
+           
+           #formRegistro {
+               /* Centrar el formulario en la página */
+               margin-top: 50px;
+               margin-left: 450px;
+               ;
+               width: 100px;
+               height: 200px;
+               /* Esquema del formulario */
+               padding: 1em;
+               border: 1px solid #CCC;
+               border-radius: 1em;
+           }
+           
+           ul {
+               list-style: none;
+               padding: 0;
+               margin: 0;
+           }
+           
+           form li+li {
+               /*Separar los campos del formulario uno de otro*/
+               margin-top: 1em;
+               /*padding-left: 150px;*/
+           }
+           
+           label {
+               /* Tamaño y alineación uniforme */
+               display: inline-block;
+               width: 90px;
+               text-align: left;
+           }
+           
+           input {
+               /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
+             Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
+               font: 1em sans-serif;
+               /* Tamaño uniforme del campo de texto */
+               width: 190px;
+               box-sizing: border-box;
+               /* Hacer coincidir los bordes del campo del formulario */
+               border: 1px solid green;
+               padding-left: 250px;
+           }
+           
+           .config-button {
+               margin: 10px 10px 0px 0px;
+               border-radius: 10px 10px 10px 10px;
+               background: cyan;
+               color: black;
+           }
+           
+           .buttons {
+               display: flex;
+               justify-content: center;
+           }
+           
+           .config-button:focus {
+               background: blue;
+               color: white;
+           }
+           /**/
